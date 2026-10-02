@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/600/400" alt="Gallery Image 1" onclick="openImage(0)">
+        <img src="https://picsum.photos/id/1016/600/400" alt="Gallery Image 2" onclick="openImage(1)">
+        <img src="https://picsum.photos/id/1018/600/400" alt="Gallery Image 3" onclick="openImage(2)">
+        <img src="https://picsum.photos/id/1025/600/400" alt="Gallery Image 4" onclick="openImage(3)">
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <button class="prev" onclick="previousImage()">&#10094;</button>
+        <img id="lightboxImage" src="" alt="Selected image">
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
